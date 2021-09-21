@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+       struct ogrenci
+   { 
+      int no;
+      char ad[50];
+      char soyad[50];
+      char cinsiyet;
+      float gnlort;
+  };
+   void ogrblgyazdir(struct ogrenci ogrblg)
+   {
+   	printf("no: %d \n ad: %s \n soyad: %s \n cinsiyet: %d \n gnlort: %0.2f",
+ 	   ogrblg.no,
+ 	   ogrblg.ad,
+ 	   ogrblg.soyad,
+ 	   ogrblg.cinsiyet,
+ 	   ogrblg.gnlort
+ 	   );
+   }
+   	
+int main()
+ {
+	struct ogrenci ogrencitest;
+	ogrblgyazdir(ogrencitest);
+
+	return 0;
+}
